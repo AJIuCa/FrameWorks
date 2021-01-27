@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/2/*")
+@WebServlet("/1/*")
 public class FirstHttpServlet extends HttpServlet {
 
     private UserRepo userRepo;

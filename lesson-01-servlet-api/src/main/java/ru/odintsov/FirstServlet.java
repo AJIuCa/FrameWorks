@@ -5,8 +5,7 @@ import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
 
-//@WebServlet("/first-servlet-app")
-@WebServlet("/1")
+@WebServlet("/first-servlet")
 public class FirstServlet implements Servlet {
 
     private ServletConfig config;

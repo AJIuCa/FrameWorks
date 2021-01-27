@@ -12,10 +12,12 @@ import java.io.IOException;
 import java.util.Map;
 
 
-@WebServlet("/users")
+@WebServlet("/users/*")
 public class UserListServlet extends HttpServlet {
 
+
     private UserRepo userRepo;
+    private String prefix;
 
     @Override
     public void init() throws ServletException {
@@ -25,14 +27,21 @@ public class UserListServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        resp.getWriter().println("<h1>Users list</h1>");
-        for (Map.Entry<Long,User> entry: userRepo.getUserMap().entrySet()){
+        prefix = req.getPathInfo();
 
-            Long key = entry.getKey();
-            User value = entry.getValue();
-            resp.getWriter().println("<p>Id: " + key + " Name: " + value.getUsername() +"</p>");
+        if (prefix == null) {
 
+            for (Map.Entry<Long, User> entry : userRepo.getUserMap().entrySet()) {
+                Long key = entry.getKey();
+                User value = entry.getValue();
+                resp.getWriter().println("<p>Id: " + key + " Name: " + value.getUsername() + "</p>");
+            }
+        } else {
+            for (int i = 0; i < userRepo.size()-1; i++) {
+                if (req.getPathInfo().equals("/"+(i+1))) {
+                    resp.getWriter().println("<p>Id: "+(i+1)+" Username: "+userRepo.findById(i+1).getUsername()+"</p>");
+                }
             }
         }
-
+    }
 }
