@@ -30,6 +30,33 @@
       <change afterPath="$PROJECT_DIR$/lesson-01-servlet-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lesson-01-servlet-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lesson-01-servlet-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/client/AuthException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/client/MessagePatterns.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/client/MessageReciever.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/client/Network.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/client/TextMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/client/history/ChatHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/client/history/ChatHistoryTextFileImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/client/swing/ChatMainWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/client/swing/ChatSwingApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/client/swing/LayoutDemoWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/client/swing/LoginDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/client/swing/TextMessageCellRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/server/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/server/ChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/server/ChatServerRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/server/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/server/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/server/auth/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/server/auth/AuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/server/auth/AuthServiceJdbcImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/java/ru/geekbrains/server/persistance/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/main/resources/spring-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/resources/fxml/message_cell.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-02-spring-basics/src/resources/fxml/scene.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +170,7 @@
       <workItem from="1611660866251" duration="11000" />
       <workItem from="1611660952977" duration="15749000" />
       <workItem from="1611761112345" duration="12220000" />
-      <workItem from="1612081584546" duration="10089000" />
+      <workItem from="1612081584546" duration="10494000" />
     </task>
     <servers />
   </component>
@@ -168,25 +195,25 @@
       <screen x="-1920" y="60" width="1920" height="1040" />
     </state>
     <state x="-1314" y="504" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1612084275137" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1612094678936">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1612095422290">
       <screen x="-1920" y="60" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1612094678936" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1612095422290" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1611776895468" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1612094678936">
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1612095422290">
       <screen x="-1920" y="60" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1612094678936" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1612095422290" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1611776895468" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1612094678936">
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1612095422290">
       <screen x="-1920" y="60" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1612094678936" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1612095422290" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1611776895468" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1612094678936">
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1612095422290">
       <screen x="-1920" y="60" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1612094678936" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1612095422290" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1611776895468" />
     <state x="690" y="281" key="extract.method.dialog" timestamp="1611761716375">
       <screen x="0" y="0" width="1920" height="1040" />
