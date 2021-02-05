@@ -2,6 +2,7 @@ package ru.geekbrains.art_shop;
 
 import org.springframework.stereotype.Repository;
 
+import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -9,7 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
 @Repository
-public class ProductRepo {
+public class ArtShopRepo {
 
     private Map<Long, Product> productMap = new ConcurrentHashMap<>();
 
@@ -23,6 +24,15 @@ public class ProductRepo {
         System.out.println(productMap.entrySet());
     }
 
+    @PostConstruct
+    public void initRepo() {
+
+        this.insertProduct(new Product("paint","black ink",5));
+        this.insertProduct(new Product("brushes","0.5 brush",2));
+        this.insertProduct(new Product("paint","red paint",8));
+        this.insertProduct(new Product("pencils","HB black pencil",1));
+
+    }
 
     public List<Product> showAllProducts() {
         return new ArrayList<>(productMap.values());

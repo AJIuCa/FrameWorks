@@ -1,14 +1,16 @@
 package ru.geekbrains.art_shop;
 
-public class Catalog {
+public class Product {
 
     private long id;
     private String  category;
     private String title;
     private int price;
 
-    public Catalog(long id, String category, String title, int price) {
-        this.id = id;
+    public Product() {
+    }
+
+    public Product(String category, String title, int price) {
         this.category = category;
         this.title = title;
         this.price = price;
