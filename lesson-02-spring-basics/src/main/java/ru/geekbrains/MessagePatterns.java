@@ -1,4 +1,4 @@
-package ru.geekbrains.client;
+package ru.geekbrains;
 
 import java.util.HashSet;
 import java.util.Set;

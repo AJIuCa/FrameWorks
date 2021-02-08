@@ -2,7 +2,7 @@ package ru.geekbrains.server.auth;
 
 import org.springframework.stereotype.Service;
 import ru.geekbrains.server.User;
-import ru.geekbrains.server.persistance.UserRepository;
+import ru.geekbrains.persistance.UserRepository;
 
 import java.sql.SQLException;
 

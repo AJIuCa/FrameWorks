@@ -1,6 +1,6 @@
-package ru.geekbrains.client.swing;
+package ru.geekbrains.swing;
 
-import ru.geekbrains.client.TextMessage;
+import ru.geekbrains.TextMessage;
 
 import javax.swing.*;
 import java.awt.*;

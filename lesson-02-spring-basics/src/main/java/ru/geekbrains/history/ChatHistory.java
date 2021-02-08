@@ -1,6 +1,6 @@
-package ru.geekbrains.client.history;
+package ru.geekbrains.history;
 
-import ru.geekbrains.client.TextMessage;
+import ru.geekbrains.TextMessage;
 
 import java.util.List;
 

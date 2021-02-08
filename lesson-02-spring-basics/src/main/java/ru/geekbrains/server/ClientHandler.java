@@ -1,6 +1,6 @@
 package ru.geekbrains.server;
 
-import ru.geekbrains.client.TextMessage;
+import ru.geekbrains.TextMessage;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.Set;
 
-import static ru.geekbrains.client.MessagePatterns.*;
+import static ru.geekbrains.MessagePatterns.*;
 
 public class ClientHandler {
 
