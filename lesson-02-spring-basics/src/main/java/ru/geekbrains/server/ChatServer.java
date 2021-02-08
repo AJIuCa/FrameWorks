@@ -1,24 +1,19 @@
 package ru.geekbrains.server;
 
 import org.springframework.stereotype.Service;
-import ru.geekbrains.client.AuthException;
-import ru.geekbrains.client.TextMessage;
+import ru.geekbrains.AuthException;
+import ru.geekbrains.TextMessage;
 import ru.geekbrains.server.auth.AuthService;
-import ru.geekbrains.server.auth.AuthServiceJdbcImpl;
-import ru.geekbrains.server.persistance.UserRepository;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.util.*;
 
-import static ru.geekbrains.client.MessagePatterns.AUTH_FAIL_RESPONSE;
-import static ru.geekbrains.client.MessagePatterns.AUTH_SUCCESS_RESPONSE;
+import static ru.geekbrains.MessagePatterns.AUTH_FAIL_RESPONSE;
+import static ru.geekbrains.MessagePatterns.AUTH_SUCCESS_RESPONSE;
 
 @Service
 public class ChatServer {

@@ -1,4 +1,4 @@
-package ru.geekbrains.server.persistance;
+package ru.geekbrains.persistance;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

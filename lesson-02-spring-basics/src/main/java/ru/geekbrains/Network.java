@@ -1,4 +1,4 @@
-package ru.geekbrains.client;
+package ru.geekbrains;
 
 import java.io.Closeable;
 import java.io.DataInputStream;
@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.Set;
 
-import static ru.geekbrains.client.MessagePatterns.*;
+import static ru.geekbrains.MessagePatterns.*;
 
 public class Network implements Closeable {
 

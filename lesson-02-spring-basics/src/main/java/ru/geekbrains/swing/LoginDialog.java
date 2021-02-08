@@ -1,7 +1,8 @@
-package ru.geekbrains.client.swing;
+package ru.geekbrains.swing;
 
-import ru.geekbrains.client.AuthException;
-import ru.geekbrains.client.Network;
+import ru.geekbrains.AuthException;
+import ru.geekbrains.Network;
+
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;

@@ -1,10 +1,10 @@
-package ru.geekbrains.client.swing;
+package ru.geekbrains.swing;
 
-import ru.geekbrains.client.MessageReciever;
-import ru.geekbrains.client.Network;
-import ru.geekbrains.client.TextMessage;
-import ru.geekbrains.client.history.ChatHistory;
-import ru.geekbrains.client.history.ChatHistoryTextFileImpl;
+import ru.geekbrains.MessageReciever;
+import ru.geekbrains.Network;
+import ru.geekbrains.TextMessage;
+import ru.geekbrains.history.ChatHistory;
+import ru.geekbrains.history.ChatHistoryTextFileImpl;
 
 import javax.swing.*;
 import java.awt.*;
