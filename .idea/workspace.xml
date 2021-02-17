@@ -66,7 +66,7 @@
       <recent name="D:\GeekBrains\FrameWorks\lesson-02-spring-basics\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Spring Boot.Lesson07HibernateSpringApplication">
     <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.geekbrains.server.ChatServer" />
       <module name="lesson-02-spring-basics" />
@@ -173,6 +173,19 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="Lesson07HibernateSpringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="lesson-07-hibernate-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.geekbrains.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.geekbrains.Lesson07HibernateSpringApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Lesson4SpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="lesson-4-spring-boot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.geekbrains.lesson4springboot.Lesson4SpringBootApplication" />
@@ -184,13 +197,15 @@
       <item itemvalue="Application.ChatServer" />
       <item itemvalue="Application.ChatServerRunner" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
       <item itemvalue="Maven.lesson-01-servlet-api [clean,install...]" />
       <item itemvalue="Maven.lesson-3" />
       <item itemvalue="Spring Boot.Lesson4SpringBootApplication" />
-      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Spring Boot.Lesson07HibernateSpringApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Lesson07HibernateSpringApplication" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.ChatServerRunner" />
@@ -217,6 +232,7 @@
       <workItem from="1612942354768" duration="21183000" />
       <workItem from="1613154781106" duration="1006000" />
       <workItem from="1613205341502" duration="16254000" />
+      <workItem from="1613564372521" duration="317000" />
     </task>
     <servers />
   </component>
