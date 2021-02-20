@@ -10,10 +10,10 @@
     </parent>
 
     <groupId>ru.geekbrains</groupId>
-    <artifactId>lesson-07-hibernate-spring</artifactId>
+    <artifactId>lesson-08-thymeleaf</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>lesson-07-hibernate-spring</name>
-    <description>Demo project for Spring Boot</description>
+    <name>lesson-08-thymeleaf</name>
+
     <properties>
         <java.version>11</java.version>
     </properties>
