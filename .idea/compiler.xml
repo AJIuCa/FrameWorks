@@ -10,6 +10,7 @@
         <module name="lesson-4-spring-boot" />
         <module name="lesson-03-spring-spring-mvc" />
         <module name="lesson-02-spring-basics" />
+        <module name="lesson-08-thymeleaf" />
         <module name="lesson-06-hibernate" />
         <module name="lesson-07-hibernate-spring" />
         <module name="lesson-05-hibernate" />
@@ -19,6 +20,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="lesson-07-hibernate-spring" options="-parameters" />
+      <module name="lesson-08-thymeleaf" options="-parameters" />
       <module name="lesson-4-spring-boot" options="-parameters" />
     </option>
   </component>
