@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="445bda61-7fa8-4fb2-aeb7-50b391566741" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-08-thymeleaf/src/main/java/ru/geekbrains/Lesson08StartApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-08-thymeleaf/src/main/java/ru/geekbrains/Lesson08StartApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-08-thymeleaf/src/main/java/ru/geekbrains/art_shop/ProductRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-08-thymeleaf/src/main/java/ru/geekbrains/art_shop/ProductRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-08-thymeleaf/src/main/java/ru/geekbrains/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-08-thymeleaf/src/main/java/ru/geekbrains/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-08-thymeleaf/src/main/java/ru/geekbrains/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-08-thymeleaf/src/main/java/ru/geekbrains/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-08-thymeleaf/src/main/java/ru/geekbrains/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-08-thymeleaf/src/main/java/ru/geekbrains/service/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-08-thymeleaf/src/main/resources/templates/artShop.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-08-thymeleaf/src/main/resources/templates/artShop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-08-thymeleaf/src/main/resources/templates/product_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-08-thymeleaf/src/main/resources/templates/product_form.html" afterDir="false" />
-    </list>
+    <list default="true" id="445bda61-7fa8-4fb2-aeb7-50b391566741" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,33 +36,33 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/spring-boot-pagination-sorting" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lesson-09-rest/src/main/java/ru/geekbrains/lesson09/service" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ru.geekbrains.server" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GeekBrains\FrameWorks" />
+      <recent name="D:\GeekBrains\FrameWorks\lesson-02-spring-basics\src\main\java" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GeekBrains\FrameWorks\lesson-09-rest\src\main\java\ru\geekbrains\lesson09\service" />
+      <recent name="D:\GeekBrains\FrameWorks\lesson-09-rest\src\main\java\ru\geekbrains\lesson09\controller" />
+      <recent name="D:\GeekBrains\FrameWorks\lesson-09-rest\src\main\java\ru\geekbrains\lesson09\art_shop" />
+      <recent name="D:\GeekBrains\FrameWorks\lesson-09-rest\src\main\resources\templates" />
       <recent name="D:\GeekBrains\FrameWorks\lesson-08-thymeleaf\src\main\resources\templates" />
-      <recent name="D:\GeekBrains\FrameWorks\lesson-08-thymeleaf\src\main\resources" />
-      <recent name="D:\GeekBrains\FrameWorks\lesson-08-thymeleaf\src\main\java\ru\geekbrains\controller" />
-      <recent name="D:\GeekBrains\FrameWorks\lesson-08-thymeleaf\src\main\java\ru\geekbrains\service" />
-      <recent name="D:\GeekBrains\FrameWorks\lesson-08-thymeleaf\src\main\java\ru\geekbrains\art_shop" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru.geekbrains.art_shop" />
       <recent name="ru.geekbrains.lesson4springboot.controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GeekBrains\FrameWorks" />
-      <recent name="D:\GeekBrains\FrameWorks\lesson-02-spring-basics\src\main\java" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.geekbrains.server" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Lesson08StartApp">
+  <component name="RunManager" selected="Spring Boot.Lesson09RestApplication">
     <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.geekbrains.server.ChatServer" />
       <module name="lesson-02-spring-basics" />
@@ -198,6 +189,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Lesson09RestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lesson-09-rest" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.geekbrains.lesson09.Lesson09RestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Lesson4SpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="lesson-4-spring-boot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.geekbrains.lesson4springboot.Lesson4SpringBootApplication" />
@@ -215,6 +213,7 @@
       <item itemvalue="Spring Boot.Lesson4SpringBootApplication" />
       <item itemvalue="Spring Boot.Lesson08StartApp" />
       <item itemvalue="Spring Boot.Lesson07HibernateSpringApplication" />
+      <item itemvalue="Spring Boot.Lesson09RestApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -286,9 +285,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1613212777355" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612254308190">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1230" y="327" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614025037049">
+      <screen x="-1920" y="60" width="1920" height="1040" />
     </state>
+    <state x="-1230" y="327" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614025037049" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1612254308190" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1613843689557">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -355,10 +355,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="281" key="extract.method.dialog/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1611761716375" />
-    <state x="342" y="181" key="new project wizard" timestamp="1613808372763">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1578" y="241" key="new project wizard" timestamp="1614024969735">
+      <screen x="-1920" y="60" width="1920" height="1040" />
     </state>
-    <state x="-1578" y="241" key="new project wizard/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1612814006746" />
+    <state x="-1578" y="241" key="new project wizard/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614024969735" />
     <state x="342" y="181" key="new project wizard/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1613808372763" />
     <state x="109" y="154" key="refactoring.ChangeSignatureDialog" timestamp="1613839276337">
       <screen x="0" y="0" width="1920" height="1040" />
