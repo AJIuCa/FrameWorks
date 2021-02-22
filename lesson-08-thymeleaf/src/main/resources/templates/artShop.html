@@ -1,26 +1,19 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head th:replace="fragments/head.html :: head"/>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"/>
-    <title>ArtShop PlagueBrush</title>
-</head>
 
 <body>
+
+<nav th:replace="fragments/head.html :: navbar"/>
 
 <div class="container">
     <div class="row py-2">
         <div class="col-12 ml-3">
             <a class="btn btn-primary" href="artshop/createProduct">Add product</a>
         </div>
-        
+
 <!--------------------------------------FILTER----------------------------------------------------------------------->
 
         <div class="col-12 mt-3 ">
@@ -55,15 +48,43 @@
             <table class="table table-bordered my-2">
                 <thead>
                 <tr>
-                    <th scope="col">Id</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Price($)</th>
+                    <th scope="col">Id
+                        <a th:href="@{/artshop(pageNumber= ${(products.number + 1)}, sizeTable=${products.getSize()},
+                           productTitleFilter=${param.productTitleFilter},
+                           minPriceFilter=${param.minPriceFilter},
+                           maxPriceFilter=${param.maxPriceFilter},
+                           sort='Id')}"
+                        ><i class="fa fa-sort-down"></i></a>
+                    </th>
+                    <th scope="col">Title
+                        <a th:href="@{/artshop(pageNumber= ${(products.number + 1)}, sizeTable=${products.getSize()},
+                           productTitleFilter=${param.productTitleFilter},
+                           minPriceFilter=${param.minPriceFilter},
+                           maxPriceFilter=${param.maxPriceFilter},
+                           sort='Title')}"
+                        ><i class="fa fa-sort-down"></i></a>
+                    </th>
+                    <th scope="col">Category
+                        <a th:href="@{/artshop(pageNumber= ${(products.number + 1)}, sizeTable=${products.getSize()},
+                           productTitleFilter=${param.productTitleFilter},
+                           minPriceFilter=${param.minPriceFilter},
+                           maxPriceFilter=${param.maxPriceFilter},
+                           sort='Category')}"
+                        ><i class="fa fa-sort-down"></i></a>
+                    </th>
+                    <th scope="col">Price($)
+                        <a th:href="@{/artshop(pageNumber= ${(products.number + 1)}, sizeTable=${products.getSize()},
+                           productTitleFilter=${param.productTitleFilter},
+                           minPriceFilter=${param.minPriceFilter},
+                           maxPriceFilter=${param.maxPriceFilter},
+                           sort='Price')}"
+                        ><i class="fa fa-sort-down"></i></a>
+                    </th>
                     <th scope="col">Actions</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr th:each="product : ${product}" >
+                <tr th:if="${products.hasContent()}" th:each="product : ${products.getContent()}" >
                     <th th:text="${product.id}" scope="row">1</th>
                     <td th:text="${product.title}">Synthetic brush</td>
                     <td th:text="${product.category}">Brushes</td>
@@ -75,22 +96,62 @@
                         </form>
                     </td>
                 </tr>
+
+                <tr th:unless="${products.hasContent()}">
+                    <td colspan="4">Product Not Found</td>
+                </tr>
+
                 </tbody>
             </table>
         </div>
+
+        <div class="col-12 ml-3">
+
+            <nav aria-label="...">
+                <ul class="pagination">
+
+
+                    <li class="page-item">
+                        <a class="page-link"
+                           th:if ="!${products.number <= 0}"
+                           th:href="@{/artshop(pageNumber= ${(products.number + 1)-1}, sizeTable=${products.getSize()},
+                           productTitleFilter=${param.productTitleFilter},
+                           minPriceFilter=${param.minPriceFilter},
+                           maxPriceFilter=${param.maxPriceFilter})}"
+                        >Previous</a>
+                    </li>
+
+                    <li th:each="num: ${#numbers.sequence(1, products.totalPages)}"
+                        th:classappend="${num == products.number + 1} ? 'active'"
+                        class="page-item">
+                        <a th:text="${num}"
+                           th:href="@{/artshop(pageNumber=${num}, sizeTable=${products.getSize()},
+                           productTitleFilter=${param.productTitleFilter},
+                           minPriceFilter=${param.minPriceFilter},
+                           maxPriceFilter=${param.maxPriceFilter})}"
+                           class="page-link"><span th:if="${num == products.number + 1}" class="sr-only">(current)</span></a>
+                    <li/>
+
+                    <li class="page-item">
+                        <a class="page-link"
+                           th:if ="!${products.number >= products.getSize() - 1}"
+                           th:href="@{/artshop(pageNumber= ${(products.number + 1)+1}, sizeTable=${products.getSize()},
+                           productTitleFilter=${param.productTitleFilter},
+                           minPriceFilter=${param.minPriceFilter},
+                           maxPriceFilter=${param.maxPriceFilter})}"
+                        >Next</a>
+                    </li>
+
+
+                </ul>
+            </nav>
+
+        </div>
+
     </div>
 </div>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+<th:block th:replace="fragments/scripts.html :: scripts"/>
+
 </body>
 </html>
