@@ -1,52 +1,47 @@
-package ru.geekbrains.lesson09.art_shop;
+package ru.geekbrains.lesson09.service;
 
-
-import ru.geekbrains.lesson09.service.ProductRest;
+import ru.geekbrains.lesson09.art_shop.Product;
 import ru.geekbrains.lesson09.service.ProductRepr;
 
-import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
-@Entity
-@Table(name = "products")
-public class Product {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class ProductRest {
+
+
     private Long id;
 
-
-    @Column(nullable = false)
+    @NotEmpty
     private String  category;
 
-
-    @Column(nullable = false)
+    @NotEmpty
     private String title;
 
-
-    @Column(nullable = false)
+    @NotNull
     private Integer price;
 
-    public Product() {
+    public ProductRest() {
     }
 
-    public Product(String category, String title, Integer price) {
+    public ProductRest(String category, String title, int price) {
         this.category = category;
         this.title = title;
         this.price = price;
     }
 
-    public Product(ProductRepr productRepr) {
+    public ProductRest(Product product) {
+        this.id = product.getId();
+        this.category = product.getCategory();
+        this.title = product.getTitle();
+        this.price = product.getPrice();
+    }
+
+    public ProductRest(ProductRepr productRepr) {
         this.id = productRepr.getId();
         this.category = productRepr.getCategory();
         this.title = productRepr.getTitle();
         this.price = productRepr.getPrice();
-    }
-
-    public Product(ProductRest productRest) {
-        this.id = productRest.getId();
-        this.category = productRest.getCategory();
-        this.title = productRest.getTitle();
-        this.price = productRest.getPrice();
     }
 
     public Long getId() {
@@ -73,7 +68,7 @@ public class Product {
         this.title = title;
     }
 
-    public int getPrice() {
+    public Integer getPrice() {
         return price;
     }
 

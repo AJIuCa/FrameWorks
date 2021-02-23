@@ -34,7 +34,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Transactional
     @Override
-    public Optional<ProductRepr> findProductById(long id) {
+    public Optional<ProductRepr> findProductById(Long id) {
 
         return productRepo.findById(id).map(ProductRepr::new);
     }
@@ -48,17 +48,8 @@ public class ProductServiceImpl implements ProductService {
 
     @Transactional
     @Override
-    public void deleteProductById(long id) {
+    public void deleteProductById(Long id) {
         productRepo.deleteById(id);
-    }
-
-
-    @Override
-    public List<ProductRepr> searchWithFilerSql(String productTitleFilter, Integer minPriceFilter, Integer maxPriceFilter) {
-        return productRepo.searchWithFilerSQL(productTitleFilter, minPriceFilter, maxPriceFilter)
-                .stream()
-                .map(ProductRepr::new)
-                .collect(Collectors.toList());
     }
 
 
@@ -81,13 +72,43 @@ public class ProductServiceImpl implements ProductService {
         if (maxPriceFilter != null) {
             spec = spec.and(ProductSpecification.maxPrice(maxPriceFilter));
         }
-        if (sort != null) {
-            return productRepo.findAll(spec, PageRequest.of(pageNumber, tableSize, Sort.by(sort).ascending()))
+        if (sort == null) {
+            return productRepo.findAll(spec, PageRequest.of(pageNumber, tableSize))
+                    .map(ProductRepr::new);
+
+        } else if (sort.isEmpty()){
+            return productRepo.findAll(spec, PageRequest.of(pageNumber, tableSize))
                     .map(ProductRepr::new);
         } else {
-            return productRepo.findAll(spec, PageRequest.of(pageNumber, tableSize))
+            return productRepo.findAll(spec, PageRequest.of(pageNumber, tableSize, Sort.by(sort).ascending()))
                     .map(ProductRepr::new);
         }
     }
+
+    @Override
+    public List<ProductRest> showAllRestProducts() {
+        return productRepo.findAll().stream().map(ProductRest::new).collect(Collectors.toList());
+    }
+
+    @Override
+    public Optional<ProductRest> findRestProductById(Long id) {
+        return productRepo.findById(id).map(ProductRest::new);
+    }
+
+    @Override
+    public void saveRestProduct(ProductRest productRest) {
+        Product productToSave = new Product(productRest);
+        productRepo.save(productToSave);
+        if (productRest.getId() == null) {
+            productRest.setId(productToSave.getId());
+        }
+    }
+
+    @Override
+    public void deleteRestProductById(Long id) {
+        productRepo.deleteById(id);
+    }
+
+
 }
 

@@ -11,11 +11,10 @@ import java.util.List;
 @Repository
 public interface ProductRepo extends JpaRepository<Product, Long>, JpaSpecificationExecutor<Product> {
 
-    @Query("select p from Product p  where " +
-       "(p.title like :productTitleFilter or :productTitleFilter is null) and " +
-       "(p.price > :minPriceFilter or :minPriceFilter is null) and" +
-       "(p.price < :maxPriceFilter or :maxPriceFilter is null)")
-
-    List<Product> searchWithFilerSQL(String productTitleFilter, Integer minPriceFilter, Integer maxPriceFilter);
+//    @Query("select p from Product p  where " +
+//       "(p.title like :productTitleFilter or :productTitleFilter is null) and " +
+//       "(p.price > :minPriceFilter or :minPriceFilter is null) and" +
+//       "(p.price < :maxPriceFilter or :maxPriceFilter is null)")
+//    List<Product> searchWithFilerSQL(String productTitleFilter, Integer minPriceFilter, Integer maxPriceFilter);
 
 }

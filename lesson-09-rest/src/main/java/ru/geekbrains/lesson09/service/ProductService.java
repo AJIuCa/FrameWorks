@@ -9,14 +9,17 @@ import java.util.Optional;
 public interface ProductService {
 
      List<ProductRepr> showAllProducts();
+     List<ProductRest> showAllRestProducts();
 
-     Optional<ProductRepr> findProductById (long id);
+     Optional<ProductRepr> findProductById (Long id);
+     Optional<ProductRest> findRestProductById (Long id);
 
      void saveProduct (ProductRepr productRepr);
+     void saveRestProduct (ProductRest productRest);
 
-     void deleteProductById (long id);
+     void deleteProductById (Long id);
+     void deleteRestProductById (Long id);
 
-     List<ProductRepr> searchWithFilerSql(String productTitleFilter, Integer minPriceFiler, Integer maxPriceFilter);
 
      Page<ProductRepr> findWithFilter(String productTitleFilter,
                                       Integer minPriceFiler,

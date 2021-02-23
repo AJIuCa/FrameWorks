@@ -1,0 +1,32 @@
+GET http://localhost:8085/spring-hibernate/api/v1/product/all
+
+###
+
+GET http://localhost:8085/spring-hibernate/api/v1/product/1
+
+###
+
+DELETE http://localhost:8085/spring-hibernate/api/v1/product/delete/7
+
+###
+
+POST http://localhost:8085/spring-hibernate/api/v1/product
+Content-Type: application/json
+
+{
+  "category": "paints",
+  "title": "Deathforest green",
+  "price": 19
+}
+
+###
+
+PUT http://localhost:8085/spring-hibernate/api/v1/product
+Content-Type: application/json
+
+{
+  "id": 1,
+  "category": "paints",
+  "title": "Brass scorpio",
+  "price": 30
+}
