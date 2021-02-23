@@ -30,32 +30,6 @@ public class ProductController {
     }
 
 
-// SQL request
-
-//    @GetMapping
-//    public String startPage(Model model,
-//                            @RequestParam("productTitleFilter") Optional<String> productTitleFilter,
-//                            @RequestParam("minPriceFilter") Optional<Integer> minPriceFilter,
-//                            @RequestParam("maxPriceFilter") Optional<Integer> maxPriceFilter) {
-//        logger.info("List page requested");
-//
-//        List<ProductRepr> products = productService.searchWithFilerSql(
-//                productTitleFilter.filter(s->!s.isBlank()).orElse(null),
-//                minPriceFilter.orElse(null),
-//                maxPriceFilter.orElse(null)
-//        );
-//
-//        model.addAttribute("products",products);
-//        return "artShop";
-//    }
-
-    //        List<ProductRepr> products = productService.searchWithFilerSql(
-//                productTitleFilter.filter(s->!s.isBlank()).orElse(null),
-//                minPriceFilter.orElse(null),
-//                maxPriceFilter.orElse(null)
-//        );
-
-
     @GetMapping
     public String startPage(Model model,
                             @RequestParam("productTitleFilter") Optional<String> productTitleFilter,
@@ -75,9 +49,6 @@ public class ProductController {
                 tableSize.orElse(3),
                 sortBy.orElse(null)
         );
-        if (sortBy.isPresent()) {
-
-        }
         model.addAttribute("products",products);
         return "artShop";
     }
