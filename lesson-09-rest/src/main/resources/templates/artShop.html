@@ -121,7 +121,8 @@
                            th:href="@{/artshop(pageNumber= ${(products.number + 1)-1}, sizeTable=${products.getSize()},
                            productTitleFilter=${param.productTitleFilter},
                            minPriceFilter=${param.minPriceFilter},
-                           maxPriceFilter=${param.maxPriceFilter})}"
+                           maxPriceFilter=${param.maxPriceFilter},
+                           sort=${param.sort})}"
                         >Previous</a>
                     </li>
 
@@ -132,7 +133,8 @@
                            th:href="@{/artshop(pageNumber=${num}, sizeTable=${products.getSize()},
                            productTitleFilter=${param.productTitleFilter},
                            minPriceFilter=${param.minPriceFilter},
-                           maxPriceFilter=${param.maxPriceFilter})}"
+                           maxPriceFilter=${param.maxPriceFilter},
+                           sort=${param.sort})}"
                            class="page-link"><span th:if="${num == products.number + 1}" class="sr-only">(current)</span></a>
                     <li/>
 
@@ -142,7 +144,8 @@
                            th:href="@{/artshop(pageNumber= ${(products.number + 1)+1}, sizeTable=${products.getSize()},
                            productTitleFilter=${param.productTitleFilter},
                            minPriceFilter=${param.minPriceFilter},
-                           maxPriceFilter=${param.maxPriceFilter})}"
+                           maxPriceFilter=${param.maxPriceFilter},
+                           sort=${param.sort})}"
                         >Next</a>
                     </li>
 
