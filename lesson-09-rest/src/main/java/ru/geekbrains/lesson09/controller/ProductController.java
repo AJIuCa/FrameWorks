@@ -46,7 +46,7 @@ public class ProductController {
                 minPriceFilter.orElse(null),
                 maxPriceFilter.orElse(null),
                 pageNumber.orElse(1) - 1,
-                tableSize.orElse(3),
+                tableSize.orElse(5),
                 sortBy.orElse(null)
         );
         model.addAttribute("products",products);
