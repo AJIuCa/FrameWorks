@@ -10,10 +10,12 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import ru.geekbrains.art_shop.BasketProduct;
 import ru.geekbrains.service.ProductRepr;
 import ru.geekbrains.service.ProductService;
 
 import javax.validation.Valid;
+import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -49,7 +51,7 @@ public class ProductController {
                 tableSize.orElse(5),
                 sortBy.orElse(null)
         );
-        model.addAttribute("products",products);
+        model.addAttribute("products", products);
         return "artShop";
     }
 
@@ -63,7 +65,7 @@ public class ProductController {
     }
 
     @GetMapping("/createProduct")
-    public String addProduct(Model model){
+    public String addProduct(Model model) {
         logger.info("Create new Product");
 
         model.addAttribute("product", new ProductRepr());
@@ -93,11 +95,39 @@ public class ProductController {
         return "redirect:/artshop";
     }
 
+
     @ExceptionHandler
-    public ModelAndView notFoundExceptionHandler (NotFoundException ex) {
+    public ModelAndView notFoundExceptionHandler(NotFoundException ex) {
         ModelAndView modelAndView = new ModelAndView("product_not_found");
         modelAndView.setStatus(HttpStatus.NOT_FOUND);
         return modelAndView;
+    }
+
+
+    @GetMapping("/basket")
+    public String getBasket(Model model) {
+        List<BasketProduct> basketProducts;
+        basketProducts = productService.showBasket();
+        model.addAttribute("basketProducts",basketProducts);
+
+        return "basket";
+
+    }
+
+    @GetMapping("/basket/add/{id}")
+    public String addProductToBasket(@PathVariable("id") Long id, Model model) {
+
+        model.addAttribute("basketProducts", productService.addProductToBasketById(id));
+
+        return "redirect:/artshop";
+
+    }
+
+    @DeleteMapping("/basket/remove/{id}")
+    public String deleteBasketProduct(@PathVariable("id") Long id) {
+
+        productService.deleteBasketProductById(id);
+        return "redirect:/artshop/basket";
     }
 
 }
