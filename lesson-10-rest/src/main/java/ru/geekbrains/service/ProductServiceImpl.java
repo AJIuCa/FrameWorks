@@ -7,9 +7,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.geekbrains.art_shop.Product;
-import ru.geekbrains.art_shop.ProductRepo;
-import ru.geekbrains.art_shop.ProductSpecification;
+import ru.geekbrains.art_shop.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -18,11 +16,14 @@ import java.util.stream.Collectors;
 @Service
 public class ProductServiceImpl implements ProductService {
 
+
     private final ProductRepo productRepo;
+    private final BasketRepo basketRepo;
 
     @Autowired
-    public ProductServiceImpl(ProductRepo productRepo) {
+    public ProductServiceImpl(ProductRepo productRepo, BasketRepo basketRepo) {
         this.productRepo = productRepo;
+        this.basketRepo = basketRepo;
     }
 
     @Override
@@ -86,6 +87,40 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+    public Page<ProductRest> findWithRestFilter(String productTitleFilter,
+                                                Integer minPriceFilter,
+                                                Integer maxPriceFilter,
+                                                Integer pageNumber,
+                                                Integer tableSize,
+                                                String sort) {
+
+        Specification<Product> spec = Specification.where(null);
+
+        if (productTitleFilter != null && !productTitleFilter.isBlank()) {
+            spec = spec.and(ProductSpecification.titleLike(productTitleFilter));
+        }
+        if (minPriceFilter != null) {
+            spec = spec.and(ProductSpecification.minPrice(minPriceFilter));
+        }
+        if (maxPriceFilter != null) {
+            spec = spec.and(ProductSpecification.maxPrice(maxPriceFilter));
+        }
+        if (sort == null) {
+            return productRepo.findAll(spec, PageRequest.of(pageNumber, tableSize))
+                    .map(ProductRest::new);
+
+        } else if (sort.isEmpty()){
+            return productRepo.findAll(spec, PageRequest.of(pageNumber, tableSize))
+                    .map(ProductRest::new);
+        } else {
+            return productRepo.findAll(spec, PageRequest.of(pageNumber, tableSize, Sort.by(sort).ascending()))
+                    .map(ProductRest::new);
+        }
+    }
+
+
+
+    @Override
     public List<ProductRest> showAllRestProducts() {
         return productRepo.findAll().stream().map(ProductRest::new).collect(Collectors.toList());
     }
@@ -108,6 +143,36 @@ public class ProductServiceImpl implements ProductService {
     public void deleteRestProductById(Long id) {
         productRepo.deleteById(id);
     }
+
+
+    @Override
+    public List<BasketProduct> showBasket() {
+
+        return basketRepo.findAll().stream().map(BasketProduct::new).collect(Collectors.toList());
+
+    }
+
+    @Transactional
+    @Override
+    public BasketProduct addProductToBasketById(Long id) {
+
+
+        Product product = productRepo.findById(id).get();
+
+        BasketProduct basketProduct = basketRepo.save(new BasketProduct(product));
+        return basketProduct;
+
+    }
+
+    @Override
+    public void deleteBasketProductById(Long id) {
+        basketRepo.deleteById(id);
+    }
+
+
+
+
+
 
 
 }

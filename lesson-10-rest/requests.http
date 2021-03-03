@@ -1,16 +1,16 @@
-GET http://localhost:8085/spring-hibernate/api/v1/product/all
+GET http://localhost:8095/spring-hibernate/api/v1/product/all
 
 ###
 
-GET http://localhost:8085/spring-hibernate/api/v1/product/1
+GET http://localhost:8095/spring-hibernate/api/v1/product/1
 
 ###
 
-DELETE http://localhost:8085/spring-hibernate/api/v1/product/delete/7
+DELETE http://localhost:8095/spring-hibernate/api/v1/product/delete/7
 
 ###
 
-POST http://localhost:8085/spring-hibernate/api/v1/product
+POST http://localhost:8095/spring-hibernate/api/v1/product
 Content-Type: application/json
 
 {
@@ -21,7 +21,7 @@ Content-Type: application/json
 
 ###
 
-PUT http://localhost:8085/spring-hibernate/api/v1/product
+PUT http://localhost:8095/spring-hibernate/api/v1/product
 Content-Type: application/json
 
 {
@@ -30,3 +30,19 @@ Content-Type: application/json
   "title": "Brass scorpio",
   "price": 30
 }
+
+###
+
+GET http://localhost:8095/spring-hibernate/api/v1/product/basketProducts
+
+###
+
+DELETE http://localhost:8095/spring-hibernate/api/v1/product/basket/remove/1
+
+###
+
+POST http://localhost:8095/spring-hibernate/api/v1/product/basket/add/9
+
+###
+
+GET http://localhost:8095/spring-hibernate/api/v1/product/filter
