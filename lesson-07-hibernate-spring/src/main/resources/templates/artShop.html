@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"/>
+    <title>ArtShop PlagueBrush</title>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row py-2">
+        <div class="col-12 ml-3">
+            <a class="btn btn-primary" href="artshop/createProduct">Add product</a>
+        </div>
+<!--------------------------------------FILTER BY TITLE----------------------------------------------------------------------->
+
+        <div class="col-12 mt-3 ">
+            <form class="form-inline" th:method="get">
+
+                <div class="form-group mx-sm-3 mb-2 mr-2">
+                    <label for="productTitleFilter" class="sr-only">Title filter</label>
+                    <input type="text" class="form-control" id="productTitleFilter" th:value="${param.titleFilter}"
+                           name="productTitleFilter" placeholder="Title filter">
+                </div>
+
+                <button type="submit" class="btn btn-primary mb-2 ml-2">Apply filter</button>
+            </form>
+        </div>
+<!-------------------------------------------------------------------------------------------------------------------->
+
+
+<!--------------------------------------FILTER BY PRICE----------------------------------------------------------------------->
+
+        <div class="col-12 mt-3 ">
+            <form class="form-inline" th:method="get">
+
+                <div class="form-group mx-sm-3 mb-2 mr-2">
+                    <label for="minPriceFilter" class="sr-only">Min Price filter</label>
+                    <input type="number" class="form-control" id="minPriceFilter" th:value="${param.minPriceFilter}"
+                           name="minPriceFilter" placeholder="Min price filter">
+                </div>
+
+                <div class="form-group mx-sm-1 mb-2 mr-2">
+                    <label for="maxPriceFilter" class="sr-only">Max Price filter</label>
+                    <input type="number" class="form-control" id="maxPriceFilter" th:value="${param.maxPriceFilter}"
+                           name="maxPriceFilter" placeholder="Max price filter">
+                </div>
+
+                <button type="submit" class="btn btn-primary mb-2 ml-3">Apply filter</button>
+            </form>
+        </div>
+
+<!-------------------------------------------------------------------------------------------------------------------->
+
+
+        <div class="col-12 ml-3">
+            <table class="table table-bordered my-2">
+                <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Price($)</th>
+                    <th scope="col">Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="product : ${product}" >
+                    <th th:text="${product.id}" scope="row">1</th>
+                    <td th:text="${product.title}">Synthetic brush</td>
+                    <td th:text="${product.category}">Brushes</td>
+                    <td th:text="${product.price}">1$</td>
+                    <td>
+                        <a class="btn btn-success" th:href="@{/artshop/{id}(id = ${product.id})}"><i class="fas fa-edit"></i></a>
+                        <form class="d-inline" th:method="delete" th:action="@{/artshop/{id}(id = ${product.id})}">
+                            <button type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+                        </form>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
