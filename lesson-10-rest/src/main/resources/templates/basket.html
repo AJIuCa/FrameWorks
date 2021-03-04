@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 <head th:replace="fragments/head.html :: head"/>
 
@@ -32,7 +35,8 @@
 
                     <td th:text="${basket.price}">1$</td>
                     <td>
-                        <form class="d-inline" th:method="delete" th:action="@{/artshop/basket/remove/{id}(id = ${basket.id})}">
+                        <form   sec:authorize="isAuthenticated()"
+                                class="d-inline" th:method="delete" th:action="@{/artshop/basket/remove/{id}(id = ${basket.id})}">
                             <button type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
                         </form>
                     </td>

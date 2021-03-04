@@ -1,17 +1,18 @@
-<!doctype html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 <head th:replace="fragments/head.html :: head"/>
 
 
 <body>
 
-<nav th:replace="fragments/head.html :: navbar"/>
+<nav th:replace="fragments/head.html :: navbar ('Products')"/>
 
 <div class="container">
     <div class="row py-2">
         <div class="col-12 ml-3">
-            <a class="btn btn-primary" href="artshop/createProduct">Add product</a>
+            <a sec:authorize="hasAnyRole('ROLE_SUPER_ADMIN', 'ROLE_ADMIN')" class="btn btn-primary" href="artshop/createProduct">Add product</a>
             <a class="btn btn-primary" href="artshop/basket">Basket</a>
         </div>
 
@@ -81,7 +82,8 @@
                            sort='Price')}"
                         ><i class="fa fa-sort-down"></i></a>
                     </th>
-                    <th scope="col">Actions</th>
+                    <th sec:authorize="isAuthenticated()"
+                        scope="col">Actions</th>
                 </tr>
                 </thead>
 
@@ -93,9 +95,13 @@
                     <td th:text="${product.category}">Brushes</td>
                     <td th:text="${product.price}">1$</td>
                     <td>
-                        <a class="btn btn-success" th:href="@{/artshop/{id}(id = ${product.id})}"><i class="fas fa-edit"></i></a>
-                        <a class="btn btn-success" th:href="@{/artshop/basket/add/{id}(id = ${product.id})}"><i class="fas fa-shopping-basket"></i></a>
-                        <form class="d-inline" th:method="delete" th:action="@{/artshop/{id}(id = ${product.id})}">
+                        <a
+                           sec:authorize="hasAnyRole('ROLE_ADMIN', 'ROLE_SUPER_ADMIN')"
+                           class="btn btn-success" th:href="@{/artshop/{id}(id = ${product.id})}"><i class="fas fa-edit"></i></a>
+                        <a sec:authorize="isAuthenticated()"
+                           class="btn btn-success" th:href="@{/artshop/basket/add/{id}(id = ${product.id})}"><i class="fas fa-shopping-basket"></i></a>
+                        <form sec:authorize="hasAnyRole('ROLE_ADMIN', 'ROLE_SUPER_ADMIN')"
+                              class="d-inline" th:method="delete" th:action="@{/artshop/{id}(id = ${product.id})}">
                             <button type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
                         </form>
                     </td>

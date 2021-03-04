@@ -11,9 +11,9 @@ public interface ProductService {
 
      List<ProductRepr> showAllProducts();
      List<ProductRest> showAllRestProducts();
-     List<BasketProduct> showBasket();
+//     List<BasketProduct> showBasket();
 
-     BasketProduct addProductToBasketById(Long id);
+//     BasketProduct addProductToBasketById(Long id);
 
      Optional<ProductRepr> findProductById (Long id);
      Optional<ProductRest> findRestProductById (Long id);
@@ -23,7 +23,7 @@ public interface ProductService {
 
      void deleteProductById (Long id);
      void deleteRestProductById (Long id);
-     public void deleteBasketProductById(Long id);
+//     public void deleteBasketProductById(Long id);
 
 
      Page<ProductRepr> findWithFilter(String productTitleFilter,

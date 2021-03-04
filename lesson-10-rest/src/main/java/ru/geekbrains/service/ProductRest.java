@@ -1,5 +1,6 @@
 package ru.geekbrains.service;
 
+import ru.geekbrains.art_shop.BasketProduct;
 import ru.geekbrains.art_shop.Product;
 
 import javax.validation.constraints.NotEmpty;
@@ -42,6 +43,7 @@ public class ProductRest {
         this.title = productRepr.getTitle();
         this.price = productRepr.getPrice();
     }
+
 
     public Long getId() {
         return id;

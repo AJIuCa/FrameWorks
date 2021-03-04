@@ -104,24 +104,24 @@ public class ProductResource {
         return new ResponseEntity<>("Bad Request", HttpStatus.NOT_FOUND);
     }
 
-//    --------------------------------------------Basket------------------------------------------------------------
-
-    @GetMapping(path = "/basketProducts" +
-            "", produces = "application/json")
-    public List<BasketProduct> showAllBasketProducts() {
-        return productService.showBasket();
-    }
-
-    @DeleteMapping("/basket/remove/{id}")
-    public void deleteByBasketId(@PathVariable("id") Long id){
-        productService.deleteBasketProductById(id);
-    }
-
-    @PostMapping("/basket/add/{id}")
-    public BasketProduct putProductToBasket (@PathVariable("id") Long id){
-
-         return productService.addProductToBasketById(id);
-    }
+////    --------------------------------------------Basket------------------------------------------------------------
+//
+//    @GetMapping(path = "/basketProducts" +
+//            "", produces = "application/json")
+//    public List<BasketProduct> showAllBasketProducts() {
+//        return productService.showBasket();
+//    }
+//
+//    @DeleteMapping("/basket/remove/{id}")
+//    public void deleteByBasketId(@PathVariable("id") Long id){
+//        productService.deleteBasketProductById(id);
+//    }
+//
+//    @PostMapping("/basket/add/{id}")
+//    public BasketProduct putProductToBasket (@PathVariable("id") Long id){
+//
+//         return productService.addProductToBasketById(id);
+//    }
 
 
 }

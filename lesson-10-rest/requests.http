@@ -1,12 +1,12 @@
-GET http://localhost:8095/spring-hibernate/api/v1/product/all
+GET http://localhost:8085/spring-hibernate/api/v1/product/all
 
 ###
 
-GET http://localhost:8095/spring-hibernate/api/v1/product/1
+GET http://localhost:8085/spring-hibernate/api/v1/product/1
 
 ###
 
-DELETE http://localhost:8095/spring-hibernate/api/v1/product/delete/7
+DELETE http://localhost:8085/spring-hibernate/api/v1/product/delete/9
 
 ###
 
@@ -15,7 +15,7 @@ Content-Type: application/json
 
 {
   "category": "paints",
-  "title": "Deathforest green",
+  "title": "green",
   "price": 19
 }
 
@@ -33,16 +33,24 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:8095/spring-hibernate/api/v1/product/basketProducts
+GET http://localhost:8095/spring-hibernate/api/v1/product/basket/all
 
 ###
 
-DELETE http://localhost:8095/spring-hibernate/api/v1/product/basket/remove/1
+DELETE http://localhost:8095/spring-hibernate/api/v1/product/basket/remove/10
 
 ###
 
-POST http://localhost:8095/spring-hibernate/api/v1/product/basket/add/9
+POST http://localhost:8095/spring-hibernate/api/v1/product/basket/add/2
 
 ###
 
 GET http://localhost:8095/spring-hibernate/api/v1/product/filter
+
+###
+
+GET http://localhost:8095/spring-spring-app/api/v1/user/1
+
+###
+
+GET http://localhost:8095/spring-spring-app/api/v1/user/all

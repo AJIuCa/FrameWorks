@@ -9,12 +9,18 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson-10-rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson-10-rest/requests.http" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/requests.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/art_shop/ProductSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/art_shop/ProductSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/Lesson10RestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/Lesson10RestApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/art_shop/BasketProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/art_shop/BasketProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/controller/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/rest/ProductResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/rest/ProductResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/service/ProductRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/service/ProductRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/service/ProductService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/service/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/templates/artShop.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/templates/artShop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/templates/basket.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/templates/basket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/templates/fragments/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/templates/fragments/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/templates/product_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/templates/product_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lesson-10-rest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lesson-10-rest/src/main/resources/templates" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -58,32 +64,483 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ru.geekbrains.server" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GeekBrains\FrameWorks\lesson-10-rest" />
-      <recent name="D:\GeekBrains\FrameWorks\lesson-10-rest\src\main\resources\templates" />
-      <recent name="D:\GeekBrains\FrameWorks\lesson-10-rest\src\main\java\ru\geekbrains\service" />
-      <recent name="D:\GeekBrains\FrameWorks\lesson-10-rest\src\main\java\ru\geekbrains\controller" />
-      <recent name="D:\GeekBrains\FrameWorks\lesson-10-rest\src\main\java\ru\geekbrains\art_shop" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ru.geekbrains.rest" />
-      <recent name="ru.geekbrains.art_shop" />
-      <recent name="ru.geekbrains.lesson4springboot.controller" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GeekBrains\FrameWorks\lesson-10-rest\src\main\resources\templates" />
       <recent name="D:\GeekBrains\FrameWorks" />
       <recent name="D:\GeekBrains\FrameWorks\lesson-02-spring-basics\src\main\java" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GeekBrains\FrameWorks\lesson-10-rest\src\main\resources\templates" />
+      <recent name="D:\GeekBrains\FrameWorks\lesson-10-rest\src\main\java\ru\geekbrains\art_shop" />
+      <recent name="D:\GeekBrains\FrameWorks\lesson-10-rest\src\main\java\ru\geekbrains" />
+      <recent name="D:\GeekBrains\FrameWorks\lesson-10-rest\src\main\resources\templates\fragments" />
+      <recent name="D:\GeekBrains\FrameWorks\lesson-10-rest\src\main\java\ru\geekbrains\service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.geekbrains.service" />
+      <recent name="ru.geekbrains.art_shop" />
+      <recent name="ru.geekbrains.rest" />
+      <recent name="ru.geekbrains.controller" />
+      <recent name="ru.geekbrains.lesson4springboot.controller" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.geekbrains.server" />
     </key>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
         <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="229FAA14BA37114549391AC7F138209A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;category&quot;: &quot;paints&quot;,&#10;  &quot;title&quot;: &quot;green&quot;,&#10;  &quot;price&quot;: 19&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="229FAA14BA37114549391AC7F138209A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/delete/9" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="229FAA14BA37114549391AC7F138209A" />
+              </Biscuit>
+            </list>
+          </option>
           <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8095/spring-hibernate/api/v1/product/all" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/all" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="229FAA14BA37114549391AC7F138209A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/1" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="D4834CEAFFD2CD2F9183719C6284E331" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basket/remove/10" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="D4834CEAFFD2CD2F9183719C6284E331" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basket/all" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="D4834CEAFFD2CD2F9183719C6284E331" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basket/add/2" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="D4834CEAFFD2CD2F9183719C6284E331" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basket/add/" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="E177D7A925B9C35B46C6775643E6069A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basketProducts/remove/12" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="E177D7A925B9C35B46C6775643E6069A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basketProducts" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="E177D7A925B9C35B46C6775643E6069A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/filter" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="F18198CCAE0890A77FA8C56FE1F18A4D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basket/remove/12" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="F18198CCAE0890A77FA8C56FE1F18A4D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basketProducts" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="20233576B8725D8C1677CF3BFEAD7406" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basket/remove/7" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="20233576B8725D8C1677CF3BFEAD7406" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basketProducts" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="20233576B8725D8C1677CF3BFEAD7406" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basket/add/4" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="20233576B8725D8C1677CF3BFEAD7406" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basket/add/1" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="20233576B8725D8C1677CF3BFEAD7406" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basket/add/13" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="11FDA2592ECB05E5D4B33EE4C45FE07D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basket/remove/13" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="11FDA2592ECB05E5D4B33EE4C45FE07D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basketProducts" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="A3C97D04E4CFED34CEC996120B0F0234" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basket/remove/13/product" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="A3C97D04E4CFED34CEC996120B0F0234" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basketProducts" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="7729B91FDCA61F46969A9B4B0964B8F5" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basket/remove/10/product" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="7729B91FDCA61F46969A9B4B0964B8F5" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basketProducts" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basket/remove/10/product" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/basketProducts" />
           <option name="urlPath" value="" />
           <option name="textToSend" value="" />
           <option name="filesToSend" value="" />
@@ -91,6 +548,34 @@
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost:8095/spring-hibernate/api/v1/product/basketProducts" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8095/spring-hibernate/api/v1/product/basket/remove/14" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8095/spring-hibernate/api/v1/product/filter" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8095/spring-hibernate/api/v1/product/basket/add/2" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8095/spring-hibernate/api/v1/product/all" />
           <option name="urlPath" value="" />
           <option name="textToSend" value="" />
           <option name="filesToSend" value="" />
@@ -308,44 +793,23 @@
           <option name="textToSend" value="" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product7" />
-          <option name="urlPath" value="" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/artshop/all" />
-          <option name="urlPath" value="" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/artshop/products" />
-          <option name="urlPath" value="" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Lesson10RestApplication">
-    <configuration name="requests#1 (1)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson-10-rest/requests.http" runType="Run single request">
+  <component name="RunManager" selected="Maven.lesson-10-rest [clean,install...]">
+    <configuration name="requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson-10-rest/requests.http" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson-09-rest/requests.http" index="2" runType="Run single request">
+    <configuration name="requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson-10-rest/requests.http" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests#6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson-10-rest/requests.http" index="6" runType="Run single request">
+    <configuration name="requests#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson-10-rest/requests.http" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="requests#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson-10-rest/requests.http" index="4" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="requests#7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson-10-rest/requests.http" index="7" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="requests#8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson-10-rest/requests.http" index="8" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="lesson-01-servlet-api [clean,install...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
@@ -492,11 +956,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.requests#2" />
-      <item itemvalue="HTTP Request.requests#1 (1)" />
-      <item itemvalue="HTTP Request.requests#6" />
       <item itemvalue="HTTP Request.requests#7" />
-      <item itemvalue="HTTP Request.requests#8" />
+      <item itemvalue="HTTP Request.requests#2" />
+      <item itemvalue="HTTP Request.requests#1" />
+      <item itemvalue="HTTP Request.requests#3" />
+      <item itemvalue="HTTP Request.requests#4" />
       <item itemvalue="Maven.lesson-09-rest [clean,install...]" />
       <item itemvalue="Maven.lesson-10-rest [clean,install...]" />
       <item itemvalue="Maven.lesson-01-servlet-api [clean,install...]" />
@@ -509,11 +973,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.requests#1 (1)" />
-        <item itemvalue="HTTP Request.requests#6" />
-        <item itemvalue="HTTP Request.requests#8" />
-        <item itemvalue="HTTP Request.requests#7" />
+        <item itemvalue="HTTP Request.requests#4" />
+        <item itemvalue="HTTP Request.requests#3" />
+        <item itemvalue="HTTP Request.requests#1" />
         <item itemvalue="HTTP Request.requests#2" />
+        <item itemvalue="HTTP Request.requests#7" />
       </list>
     </recent_temporary>
   </component>
@@ -545,6 +1009,12 @@
       <workItem from="1614371759827" duration="2616000" />
       <workItem from="1614403385003" duration="6018000" />
       <workItem from="1614409462963" duration="11616000" />
+      <workItem from="1614620089606" duration="1333000" />
+      <workItem from="1614708856764" duration="3762000" />
+      <workItem from="1614712710877" duration="24000" />
+      <workItem from="1614713029528" duration="14731000" />
+      <workItem from="1614792979715" duration="16282000" />
+      <workItem from="1614879984239" duration="3143000" />
     </task>
     <servers />
   </component>
@@ -565,16 +1035,16 @@
     </state>
     <state x="-1480" y="154" key="#Project_Structure/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1612813893699" />
     <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1613828965036" />
-    <state x="493" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614421960067">
+    <state x="493" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614880016967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1145" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1612089757064" />
-    <state x="493" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614421960067" />
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1614421354232">
+    <state x="493" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614880016967" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1614807208225">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1155" y="286" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614372265830" />
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614421354232" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614807208225" />
     <state x="606" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1612254242222">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -584,60 +1054,60 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1613212777355" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614415103628">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614806871169">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1230" y="327" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614367332364" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614415103628" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614806871169" />
     <state x="690" y="267" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1614406700149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614406700149" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1613843689557">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1614710638475">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1180" y="335" key="FileChooserDialogImpl/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1612814017902" />
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1613843689557" />
-    <state width="1877" height="341" key="GridCell.Tab.0.bottom" timestamp="1614435006474">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614710638475" />
+    <state width="1877" height="341" key="GridCell.Tab.0.bottom" timestamp="1614883148053">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="221" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614368171778" />
-    <state width="1877" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614435006474" />
-    <state width="1877" height="341" key="GridCell.Tab.0.center" timestamp="1614435006474">
+    <state width="1877" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614883148053" />
+    <state width="1877" height="341" key="GridCell.Tab.0.center" timestamp="1614883148053">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="221" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614368171778" />
-    <state width="1877" height="341" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614435006474" />
-    <state width="1877" height="341" key="GridCell.Tab.0.left" timestamp="1614435006474">
+    <state width="1877" height="341" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614883148053" />
+    <state width="1877" height="341" key="GridCell.Tab.0.left" timestamp="1614883148052">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="221" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614368171778" />
-    <state width="1877" height="341" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614435006474" />
-    <state width="1877" height="341" key="GridCell.Tab.0.right" timestamp="1614435006474">
+    <state width="1877" height="341" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614883148052" />
+    <state width="1877" height="341" key="GridCell.Tab.0.right" timestamp="1614883148053">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="221" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614368171778" />
-    <state width="1877" height="341" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614435006474" />
-    <state width="1877" height="341" key="GridCell.Tab.1.bottom" timestamp="1614435006464">
+    <state width="1877" height="341" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614883148053" />
+    <state width="1877" height="341" key="GridCell.Tab.1.bottom" timestamp="1614880727363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="221" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614368171778" />
-    <state width="1877" height="341" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614435006464" />
-    <state width="1877" height="341" key="GridCell.Tab.1.center" timestamp="1614435006464">
+    <state width="1877" height="341" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614880727363" />
+    <state width="1877" height="341" key="GridCell.Tab.1.center" timestamp="1614880727363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="221" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614368171778" />
-    <state width="1877" height="341" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614435006464" />
-    <state width="1877" height="341" key="GridCell.Tab.1.left" timestamp="1614435006464">
+    <state width="1877" height="341" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614880727363" />
+    <state width="1877" height="341" key="GridCell.Tab.1.left" timestamp="1614880727362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="221" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614368171778" />
-    <state width="1877" height="341" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614435006464" />
-    <state width="1877" height="341" key="GridCell.Tab.1.right" timestamp="1614435006464">
+    <state width="1877" height="341" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614880727362" />
+    <state width="1877" height="341" key="GridCell.Tab.1.right" timestamp="1614880727363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="221" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614368171778" />
-    <state width="1877" height="341" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614435006464" />
+    <state width="1877" height="341" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614880727363" />
     <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1613830966749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -667,14 +1137,14 @@
     </state>
     <state x="-1578" y="241" key="new project wizard/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614367310767" />
     <state x="342" y="181" key="new project wizard/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1613808372763" />
-    <state x="109" y="154" key="refactoring.ChangeSignatureDialog" timestamp="1613839276337">
+    <state x="109" y="154" key="refactoring.ChangeSignatureDialog" timestamp="1614807779255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="109" y="154" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1613839276337" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1614056062976">
+    <state x="109" y="154" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614807779255" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1614714550651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614056062976" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614714550651" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614406358116">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
