@@ -18,12 +18,12 @@ public class ProductServiceImpl implements ProductService {
 
 
     private final ProductRepo productRepo;
-    private final BasketRepo basketRepo;
+
 
     @Autowired
-    public ProductServiceImpl(ProductRepo productRepo, BasketRepo basketRepo) {
+    public ProductServiceImpl(ProductRepo productRepo) {
         this.productRepo = productRepo;
-        this.basketRepo = basketRepo;
+
     }
 
     @Override
@@ -143,35 +143,6 @@ public class ProductServiceImpl implements ProductService {
     public void deleteRestProductById(Long id) {
         productRepo.deleteById(id);
     }
-
-
-    @Override
-    public List<BasketProduct> showBasket() {
-
-        return basketRepo.findAll().stream().map(BasketProduct::new).collect(Collectors.toList());
-
-    }
-
-    @Transactional
-    @Override
-    public BasketProduct addProductToBasketById(Long id) {
-
-
-        Product product = productRepo.findById(id).get();
-
-        BasketProduct basketProduct = basketRepo.save(new BasketProduct(product));
-        return basketProduct;
-
-    }
-
-    @Override
-    public void deleteBasketProductById(Long id) {
-        basketRepo.deleteById(id);
-    }
-
-
-
-
 
 
 

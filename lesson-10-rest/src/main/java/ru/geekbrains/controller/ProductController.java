@@ -11,6 +11,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import ru.geekbrains.art_shop.BasketProduct;
+import ru.geekbrains.service.BasketService;
 import ru.geekbrains.service.ProductRepr;
 import ru.geekbrains.service.ProductService;
 
@@ -25,10 +26,12 @@ public class ProductController {
     private static final Logger logger = LoggerFactory.getLogger(ProductController.class);
 
     private final ProductService productService;
+    private final BasketService basketService;
 
     @Autowired
-    public ProductController(ProductService productService) {
+    public ProductController(ProductService productService, BasketService basketService) {
         this.productService = productService;
+        this.basketService = basketService;
     }
 
 
@@ -44,7 +47,7 @@ public class ProductController {
 
 
         Page<ProductRepr> products = productService.findWithFilter(
-                productTitleFilter.filter(s -> !s.isBlank()).orElse(null),
+                productTitleFilter.orElse(null),
                 minPriceFilter.orElse(null),
                 maxPriceFilter.orElse(null),
                 pageNumber.orElse(1) - 1,
@@ -107,7 +110,7 @@ public class ProductController {
     @GetMapping("/basket")
     public String getBasket(Model model) {
         List<BasketProduct> basketProducts;
-        basketProducts = productService.showBasket();
+        basketProducts = basketService.showBasket();
         model.addAttribute("basketProducts",basketProducts);
 
         return "basket";
@@ -117,7 +120,7 @@ public class ProductController {
     @GetMapping("/basket/add/{id}")
     public String addProductToBasket(@PathVariable("id") Long id, Model model) {
 
-        model.addAttribute("basketProducts", productService.addProductToBasketById(id));
+        model.addAttribute("basketProducts", basketService.addProductToBasketById(id));
 
         return "redirect:/artshop";
 
@@ -126,8 +129,7 @@ public class ProductController {
     @DeleteMapping("/basket/remove/{id}")
     public String deleteBasketProduct(@PathVariable("id") Long id) {
 
-        productService.deleteBasketProductById(id);
+        basketService.deleteBasketProductById(id);
         return "redirect:/artshop/basket";
     }
-
 }
