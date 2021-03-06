@@ -7,20 +7,10 @@
     <list default="true" id="445bda61-7fa8-4fb2-aeb7-50b391566741" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-10-rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson-10-rest/requests.http" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/requests.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/Lesson10RestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/Lesson10RestApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/art_shop/BasketProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/art_shop/BasketProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/rest/ProductResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/rest/ProductResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/service/ProductRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/service/ProductRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/service/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/service/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/templates/artShop.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/templates/artShop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/templates/basket.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/templates/basket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/templates/fragments/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/templates/fragments/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/templates/product_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/resources/templates/product_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-10-rest/src/main/java/ru/geekbrains/security/SecurityConfiguration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,10 +54,8 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GeekBrains\FrameWorks\lesson-10-rest\src\main\resources\templates" />
-      <recent name="D:\GeekBrains\FrameWorks" />
-      <recent name="D:\GeekBrains\FrameWorks\lesson-02-spring-basics\src\main\java" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.geekbrains.server" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GeekBrains\FrameWorks\lesson-10-rest\src\main\resources\templates" />
@@ -83,13 +71,258 @@
       <recent name="ru.geekbrains.controller" />
       <recent name="ru.geekbrains.lesson4springboot.controller" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ru.geekbrains.server" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GeekBrains\FrameWorks\lesson-10-rest\src\main\resources\templates" />
+      <recent name="D:\GeekBrains\FrameWorks" />
+      <recent name="D:\GeekBrains\FrameWorks\lesson-02-spring-basics\src\main\java" />
     </key>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="229FAA14BA37114549391AC7F138209A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8095/spring-hibernate/api/v1/user/14" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="229FAA14BA37114549391AC7F138209A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8095/spring-hibernate/api/v1/user/all" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="229FAA14BA37114549391AC7F138209A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8095/spring-spring-app/api/v1/user/all" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="229FAA14BA37114549391AC7F138209A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8095/spring-spring-app/api/v1/user/5" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="229FAA14BA37114549391AC7F138209A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8095/spring-spring-app/api/v1/user/3" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="229FAA14BA37114549391AC7F138209A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8095/spring-spring-app/api/v1/user/1" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="229FAA14BA37114549391AC7F138209A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8095/spring-hibernate/api/v1/product/basket/all" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="229FAA14BA37114549391AC7F138209A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8095/spring-hibernate/api/v1/product/basket/add/12" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="229FAA14BA37114549391AC7F138209A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8095/spring-hibernate/api/v1/product/all" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="229FAA14BA37114549391AC7F138209A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8095/spring-hibernate/api/v1/product/basket/remove/13" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="229FAA14BA37114549391AC7F138209A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8095/spring-hibernate/api/v1/product" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;category&quot;: &quot;paints&quot;,&#10;  &quot;title&quot;: &quot;green&quot;,&#10;  &quot;price&quot;: 19&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="229FAA14BA37114549391AC7F138209A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8095/spring-hibernate/api/v1/product/delete/11" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/spring-hibernate" />
+                <option name="value" value="229FAA14BA37114549391AC7F138209A" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8095/spring-hibernate/api/v1/product/1" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="biscuits">
             <list>
@@ -647,152 +880,6 @@
           <option name="textToSend" value="{&#10;  &quot;category&quot;: &quot;paints&quot;,&#10;  &quot;title&quot;: &quot;Deathforest green&quot;,&#10;  &quot;price&quot;: 19&#10;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/all" />
-          <option name="urlPath" value="" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;category&quot;: &quot;paints&quot;,&#10;  &quot;title&quot;: &quot;White scars&quot;,&#10;  &quot;price&quot;: 17&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;category&quot;: &quot;paints&quot;,&#10;  &quot;title&quot;: &quot;Bone white&quot;,&#10;  &quot;price&quot;: 17&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;category&quot;: &quot;paints&quot;,&#10;  &quot;title&quot;: &quot;Bone white&quot;,&#10;  &quot;price&quot;: 17&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/6" />
-          <option name="urlPath" value="" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product" />
-          <option name="urlPath" value="" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;category&quot;: &quot;paints&quot;,&#10;  &quot;title&quot;: &quot;Bone white&quot;,&#10;  &quot;price&quot;: 17&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &#10;  &quot;category&quot;: &quot;paints&quot;,&#10;  &quot;title&quot;: &quot;Bone white&quot;,&#10;  &quot;price&quot;: 17&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;id&quot;: 7,&#10;  &quot;category&quot;: &quot;paints&quot;,&#10;  &quot;title&quot;: &quot;Bone white&quot;,&#10;  &quot;price&quot;: 17&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;id&quot;: 8,&#10;  &quot;category&quot;: &quot;paints&quot;,&#10;  &quot;title&quot;: &quot;Bone white&quot;,&#10;  &quot;price&quot;: 17&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/7" />
-          <option name="urlPath" value="" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="DELETE" />
-          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/delete/7" />
-          <option name="urlPath" value="" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/delete/7" />
-          <option name="urlPath" value="" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="PUT" />
-          <option name="urlBase" value="http://localhost:8085/spring-hibernate/api/v1/product/delete/7" />
-          <option name="urlPath" value="" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -800,16 +887,16 @@
     <configuration name="requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson-10-rest/requests.http" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson-10-rest/requests.http" index="2" runType="Run single request">
+    <configuration name="requests#10" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson-10-rest/requests.http" index="10" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson-10-rest/requests.http" index="3" runType="Run single request">
+    <configuration name="requests#11" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson-10-rest/requests.http" index="11" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson-10-rest/requests.http" index="4" runType="Run single request">
+    <configuration name="requests#6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson-10-rest/requests.http" index="6" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests#7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson-10-rest/requests.http" index="7" runType="Run single request">
+    <configuration name="requests#8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson-10-rest/requests.http" index="8" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="lesson-01-servlet-api [clean,install...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
@@ -956,11 +1043,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.requests#7" />
-      <item itemvalue="HTTP Request.requests#2" />
       <item itemvalue="HTTP Request.requests#1" />
-      <item itemvalue="HTTP Request.requests#3" />
-      <item itemvalue="HTTP Request.requests#4" />
       <item itemvalue="Maven.lesson-09-rest [clean,install...]" />
       <item itemvalue="Maven.lesson-10-rest [clean,install...]" />
       <item itemvalue="Maven.lesson-01-servlet-api [clean,install...]" />
@@ -970,14 +1053,18 @@
       <item itemvalue="Spring Boot.Lesson09RestApplication" />
       <item itemvalue="Spring Boot.Lesson10RestApplication" />
       <item itemvalue="Spring Boot.Lesson07HibernateSpringApplication" />
+      <item itemvalue="HTTP Request.requests#6" />
+      <item itemvalue="HTTP Request.requests#8" />
+      <item itemvalue="HTTP Request.requests#10" />
+      <item itemvalue="HTTP Request.requests#11" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.requests#4" />
-        <item itemvalue="HTTP Request.requests#3" />
+        <item itemvalue="HTTP Request.requests#10" />
+        <item itemvalue="HTTP Request.requests#11" />
+        <item itemvalue="HTTP Request.requests#6" />
+        <item itemvalue="HTTP Request.requests#8" />
         <item itemvalue="HTTP Request.requests#1" />
-        <item itemvalue="HTTP Request.requests#2" />
-        <item itemvalue="HTTP Request.requests#7" />
       </list>
     </recent_temporary>
   </component>
@@ -1015,6 +1102,8 @@
       <workItem from="1614713029528" duration="14731000" />
       <workItem from="1614792979715" duration="16282000" />
       <workItem from="1614879984239" duration="3143000" />
+      <workItem from="1614967592454" duration="810000" />
+      <workItem from="1615007699242" duration="1987000" />
     </task>
     <servers />
   </component>
@@ -1068,46 +1157,46 @@
     </state>
     <state x="-1180" y="335" key="FileChooserDialogImpl/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1612814017902" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614710638475" />
-    <state width="1877" height="341" key="GridCell.Tab.0.bottom" timestamp="1614883148053">
+    <state width="1877" height="341" key="GridCell.Tab.0.bottom" timestamp="1615015084954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="221" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614368171778" />
-    <state width="1877" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614883148053" />
-    <state width="1877" height="341" key="GridCell.Tab.0.center" timestamp="1614883148053">
+    <state width="1877" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1615015084954" />
+    <state width="1877" height="341" key="GridCell.Tab.0.center" timestamp="1615015084954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="221" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614368171778" />
-    <state width="1877" height="341" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614883148053" />
-    <state width="1877" height="341" key="GridCell.Tab.0.left" timestamp="1614883148052">
+    <state width="1877" height="341" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1615015084954" />
+    <state width="1877" height="341" key="GridCell.Tab.0.left" timestamp="1615015084954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="221" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614368171778" />
-    <state width="1877" height="341" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614883148052" />
-    <state width="1877" height="341" key="GridCell.Tab.0.right" timestamp="1614883148053">
+    <state width="1877" height="341" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1615015084954" />
+    <state width="1877" height="341" key="GridCell.Tab.0.right" timestamp="1615015084954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="221" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614368171778" />
-    <state width="1877" height="341" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614883148053" />
-    <state width="1877" height="341" key="GridCell.Tab.1.bottom" timestamp="1614880727363">
+    <state width="1877" height="341" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1615015084954" />
+    <state width="1877" height="341" key="GridCell.Tab.1.bottom" timestamp="1615015084949">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="221" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614368171778" />
-    <state width="1877" height="341" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614880727363" />
-    <state width="1877" height="341" key="GridCell.Tab.1.center" timestamp="1614880727363">
+    <state width="1877" height="341" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1615015084949" />
+    <state width="1877" height="341" key="GridCell.Tab.1.center" timestamp="1615015084948">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="221" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614368171778" />
-    <state width="1877" height="341" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614880727363" />
-    <state width="1877" height="341" key="GridCell.Tab.1.left" timestamp="1614880727362">
+    <state width="1877" height="341" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1615015084948" />
+    <state width="1877" height="341" key="GridCell.Tab.1.left" timestamp="1615015084948">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="221" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614368171778" />
-    <state width="1877" height="341" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614880727362" />
-    <state width="1877" height="341" key="GridCell.Tab.1.right" timestamp="1614880727363">
+    <state width="1877" height="341" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1615015084948" />
+    <state width="1877" height="341" key="GridCell.Tab.1.right" timestamp="1615015084948">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="221" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.60.1920.1040@-1920.60.1920.1040" timestamp="1614368171778" />
-    <state width="1877" height="341" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1614880727363" />
+    <state width="1877" height="341" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.60.1920.1040@0.0.1920.1040" timestamp="1615015084948" />
     <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1613830966749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

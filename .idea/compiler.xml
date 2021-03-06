@@ -13,9 +13,9 @@
         <module name="lesson-02-spring-basics" />
         <module name="lesson-10-rest" />
         <module name="lesson-06-hibernate" />
-        <module name="lesson-05-hibernate" />
-        <module name="lesson-07-hibernate-spring" />
         <module name="lesson-08-thymeleaf" />
+        <module name="lesson-07-hibernate-spring" />
+        <module name="lesson-05-hibernate" />
       </profile>
     </annotationProcessing>
   </component>
