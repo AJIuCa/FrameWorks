@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -33,7 +34,7 @@ public class UserController {
         this.roleRepository = roleRepository;
     }
 
-
+    @Secured({"GUEST"})
     @GetMapping
     public String listPage(Model model,
                            @RequestParam("usernameFilter") Optional<String> usernameFilter,
@@ -56,6 +57,7 @@ public class UserController {
         return "user";
     }
 
+    @Secured({"GUEST"})
     @GetMapping("/{id}")
     public String editPage(@PathVariable("id") Long id, Model model) {
         logger.info("Edit page for id {} requested", id);
@@ -66,7 +68,7 @@ public class UserController {
         return "user_form";
     }
 
-
+    @Secured({"ADMIN"})
     @PostMapping("/update")
     public String update(@Valid @ModelAttribute("user") UserRepr user, BindingResult result, Model model) {
         logger.info("Update endpoint requested");
@@ -85,7 +87,7 @@ public class UserController {
         return "redirect:/user";
     }
 
-
+    @Secured({"SUPER_ADMIN"})
     @GetMapping("/new")
     public String create(Model model) {
         logger.info("Create new user request");
@@ -101,7 +103,7 @@ public class UserController {
         return "user_form";
     }
 
-
+    @Secured({"SUPER_ADMIN"})
     @DeleteMapping("/{id}")
     public String remove(@PathVariable("id") Long id) {
         logger.info("User delete request");
